@@ -37,6 +37,8 @@ export interface CaptainRecord {
 export interface TrophyWinner {
 	trophy: string
 	year: string
+	MOTM: string
+	MOTS: string
 	captain: string
 }
 
@@ -156,15 +158,15 @@ const defaultCaptainRecords: CaptainRecord[] = [
 ]
 
 const defaultTrophyWinners: TrophyWinner[] = [
-	{ trophy: 'Parariya', year: '1999', captain: 'Mantu' },
-	{ trophy: 'Parariya', year: '2000', captain: 'Mantu' },
-	{ trophy: 'Barahara', year: '2001', captain: 'Mantu' },
-	{ trophy: 'Chatar', year: '2006', captain: 'Mantu' },
-	{ trophy: 'Kuiya', year: '2010', captain: 'Mantu' },
-	{ trophy: 'Kuiya', year: '2012', captain: 'Mantu' },
-	{ trophy: 'Matupur', year: '2013', captain: 'Mantu' },
-	{ trophy: 'Turki', year: '2016', captain: 'Mantu' },
-	{ trophy: 'Parariya', year: '2011', captain: 'Bholu' }
+	{ trophy: 'Parariya', year: '1999', MOTM: 'Mantu', MOTS: ' ', captain: 'Mantu' },
+	{ trophy: 'Parariya', year: '2000', MOTM: 'Mantu', MOTS: 'Mantu', captain: 'Mantu' },
+	{ trophy: 'Barahara', year: '2003', MOTM: 'Bablu', MOTS: 'Mantu', captain: 'Mantu' },
+	{ trophy: 'Chatar', year: '2006', MOTM: 'Bablu', MOTS: 'Mantu', captain: 'Mantu' },
+	{ trophy: 'Kuiya', year: '2010', MOTM: 'Mantu', MOTS: ' ', captain: 'Mantu' },
+	{ trophy: 'Kuiya', year: '2012', MOTM: 'Mantu', MOTS: 'Sandip', captain: 'Mantu' },
+	{ trophy: 'Pararia', year: '2013', MOTM: 'Bholu', MOTS: 'Kundan', captain: 'Bholu' },
+	{ trophy: 'Matukpur', year: '2014', MOTM: 'Bikas', MOTS: 'Bikas', captain: 'Mantu' },
+	{ trophy: 'Turki', year: '2016', MOTM: 'Bholu', MOTS: " ", captain: 'Bholu' }
 ]
 
 export function DataProvider({ children }: { children: ReactNode }) {
