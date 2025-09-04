@@ -98,7 +98,7 @@ export default function Home() {
 									</div>
 									<div className="flex justify-between items-center bg-purple-500/10 rounded px-2 py-1">
 										<span className="text-visible">Best Captain</span>
-										<span className="text-visible-muted">Mantu</span>
+										<span className="text-visible-muted">Bholu</span>
 									</div>
 									<div className="flex justify-between items-center bg-purple-500/10 rounded px-2 py-1">
 										<span className="text-visible">Best Batting Avg</span>

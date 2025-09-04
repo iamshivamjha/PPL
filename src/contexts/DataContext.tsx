@@ -95,7 +95,7 @@ const defaultPlayers: Player[] = [
 	{ name: "Sandip", matches: 21, runs: 190, wickets: 23, battingAverage: 9.0, bowlingAverage: 9.1, winPercentage: 68, matchesAsCaptain: 15 },
 	{ name: "Sunmun", matches: 20, runs: 200, wickets: 8, battingAverage: 10.0, bowlingAverage: 25.0, winPercentage: 0, matchesAsCaptain: 0 },
 	{ name: "Amar", matches: 19, runs: 350, wickets: 0, battingAverage: 18.4, bowlingAverage: 0, winPercentage: 0, matchesAsCaptain: 0 },
-	{ name: "Bablu Singh", matches: 100, runs: 900, wickets: 1550, battingAverage: 9.0, bowlingAverage: 0.6, winPercentage: 60.0, matchesAsCaptain: 50 }
+	{ name: "Bablu Singh", matches: 100, runs: 500, wickets: 300, battingAverage: 5.0, bowlingAverage: 0.6, winPercentage: 0, matchesAsCaptain: 0 }
 ]
 
 const defaultHallOfFameMembers: HallOfFameMember[] = [
@@ -121,19 +121,19 @@ const defaultHallOfFameMembers: HallOfFameMember[] = [
 	{
 		name: "Bablu Singh",
 		achievements: [
-			"Legendary PCA captain with 60% win rate",
-			"Outstanding bowling performance with 1550 wickets",
+			"Legendary PCA player",
+			"Outstanding bowling with 300 wickets",
 			"Consistent all-round contributions",
-			"Led PCA to multiple victories as captain"
+			"Led PCA to multiple victories"
 		],
 		stats: {
 			matches: 100,
-			runs: 900,
-			wickets: 1550,
-			battingAverage: 9.0,
+			runs: 500,
+			wickets: 300,
+			battingAverage: 5.0,
 			bowlingAverage: 0.6,
-			winPercentage: 60.0,
-			matchesAsCaptain: 50
+			winPercentage: 0,
+			matchesAsCaptain: 0
 		}
 	}
 ]
@@ -155,11 +155,11 @@ const defaultCaptainRecords: CaptainRecord[] = [
 ]
 
 const defaultTrophyWinners: TrophyWinner[] = [
-	{ trophy: 'Barahara (2)', captain: 'Mantu' },
+	{ trophy: 'Barahara', captain: 'Mantu' },
 	{ trophy: 'Parariya (2)', captain: 'Mantu' },
 	{ trophy: 'Chatar', captain: 'Mantu' },
-	{ trophy: 'Kuiya (3)', captain: 'Mantu' },
-	{ trophy: 'Matupur', captain: 'Mantu' },
+	{ trophy: 'Kuiya (2)', captain: 'Mantu' },
+	{ trophy: 'Matukpur', captain: 'Mantu' },
 	{ trophy: 'Turki', captain: 'Mantu' },
 	{ trophy: 'Parariya', captain: 'Bholu' }
 ]
