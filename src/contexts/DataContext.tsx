@@ -156,10 +156,12 @@ const defaultCaptainRecords: CaptainRecord[] = [
 
 const defaultTrophyWinners: TrophyWinner[] = [
 	{ trophy: 'Barahara (2)', captain: 'Mantu' },
-	{ trophy: 'Pararia (2)', captain: 'Mantu' },
-	{ trophy: 'Chatar Kuiya (3)', captain: 'Mantu' },
-	{ trophy: 'Matupur Turki', captain: 'Mantu' },
-	{ trophy: 'Unknown Trophy', captain: 'Bholu' }
+	{ trophy: 'Parariya (2)', captain: 'Mantu' },
+	{ trophy: 'Chatar', captain: 'Mantu' },
+	{ trophy: 'Kuiya (3)', captain: 'Mantu' },
+	{ trophy: 'Matupur', captain: 'Mantu' },
+	{ trophy: 'Turki', captain: 'Mantu' },
+	{ trophy: 'Parariya', captain: 'Bholu' }
 ]
 
 export function DataProvider({ children }: { children: ReactNode }) {
