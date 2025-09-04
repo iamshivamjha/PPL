@@ -26,29 +26,26 @@ export default function PCARecords() {
 				<StubTable title="Best Win % as Captain" columns={captainColumns} rows={captainRecords as any} />
 
 				{/* PCA SuperOver Tournament Winner */}
-				<div className="content-center px-4 mb-6">
+				<div className="content-center px-4 mb-4">
 					<h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold main-title text-center break-words leading-tight">🏆 PCA SUPEROVER TOURNAMENT WINNER</h2>
 				</div>
-				<div className="cricket-card rounded-xl overflow-hidden max-w-4xl mx-auto w-full">
+				<div className="cricket-card rounded-xl overflow-hidden max-w-4xl mx-auto w-full mb-6">
 					<div className="overflow-x-auto">
 						<table className="w-full min-w-[400px]">
 							<thead className="bg-green-600 dark:bg-green-700 text-white">
 								<tr>
-									<th className="py-3 sm:py-4 px-3 sm:px-6 text-left font-semibold text-sm sm:text-base whitespace-nowrap">Position</th>
-									<th className="py-3 sm:py-4 px-3 sm:px-6 text-left font-semibold text-sm sm:text-base whitespace-nowrap">Winner</th>
-									<th className="py-3 sm:py-4 px-3 sm:px-6 text-left font-semibold text-sm sm:text-base whitespace-nowrap">Runner Up</th>
+									<th className="py-3 sm:py-4 px-3 sm:px-6 text-center font-semibold text-sm sm:text-base whitespace-nowrap">Winner</th>
+									<th className="py-3 sm:py-4 px-3 sm:px-6 text-center font-semibold text-sm sm:text-base whitespace-nowrap">Runner Up</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr className="border-b border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800">
-									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base">1st</td>
-									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base">Bholu</td>
-									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base">Golu</td>
+									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base text-center">Bholu</td>
+									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base text-center">Golu</td>
 								</tr>
 								<tr className="border-b border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
-									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base">2nd</td>
-									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base">Bholu</td>
-									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base">GoluC</td>
+									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base text-center">Bholu</td>
+									<td className="py-2 sm:py-3 px-3 sm:px-6 text-visible font-medium text-sm sm:text-base text-center">GoluC</td>
 								</tr>
 							</tbody>
 						</table>

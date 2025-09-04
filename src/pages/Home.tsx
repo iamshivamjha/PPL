@@ -60,15 +60,17 @@ export default function Home() {
 						<div className="space-y-2 mt-4">
 							<div className="text-center">
 								<div className="text-sm font-semibold text-visible mb-2">PCA Trophies Won</div>
-								<div className="grid grid-cols-2 gap-1 text-xs mb-2">
+								<div className="grid grid-cols-3 gap-1 text-xs mb-2">
 									<div className="text-visible font-semibold">Trophy</div>
+									<div className="text-visible font-semibold">Year</div>
 									<div className="text-visible font-semibold">Captain</div>
 								</div>
 								<div className="space-y-1 text-xs">
 									{trophyWinners.map((trophy, index) => (
-										<div key={index} className="flex justify-between items-center bg-green-500/10 rounded px-2 py-1">
+										<div key={index} className="grid grid-cols-3 gap-1 items-center bg-green-500/10 rounded px-2 py-1">
 											<span className="text-visible">{trophy.trophy}</span>
-											<span className="text-visible-muted">{trophy.captain}</span>
+											<span className="text-visible-muted text-center">{trophy.year}</span>
+											<span className="text-visible-muted text-center">{trophy.captain}</span>
 										</div>
 									))}
 								</div>
