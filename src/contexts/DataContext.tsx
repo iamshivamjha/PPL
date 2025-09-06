@@ -166,7 +166,7 @@ const defaultTrophyWinners: TrophyWinner[] = [
 	{ trophy: 'Kuiya', year: '2012', MOTM: 'Mantu', MOTS: 'Sandip', captain: 'Mantu' },
 	{ trophy: 'Pararia', year: '2013', MOTM: 'Bholu', MOTS: 'Kundan', captain: 'Bholu' },
 	{ trophy: 'Matukpur', year: '2014', MOTM: 'Bikas', MOTS: 'Bikas', captain: 'Mantu' },
-	{ trophy: 'Turki', year: '2016', MOTM: 'Bholu', MOTS: " ", captain: 'Bholu' }
+	{ trophy: 'Turki', year: '2016', MOTM: 'Senli', MOTS: " ", captain: 'Mantu' }
 ]
 
 export function DataProvider({ children }: { children: ReactNode }) {
