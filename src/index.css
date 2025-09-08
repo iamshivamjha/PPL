@@ -1,0 +1,428 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 84% 4.9%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 94.1%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Cricket-themed custom styles */
+.cricket-bg {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+  min-height: 100vh;
+}
+
+.dark .cricket-bg {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+
+.cricket-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cricket-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.dark .cricket-card {
+  background: rgba(30, 58, 138, 0.95);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dark .cricket-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cricket-text {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+
+.dark .cricket-text {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced text visibility */
+.text-visible {
+  color: #1f2937 !important;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 480px) {
+  .page-container {
+    padding: 0.5rem;
+  }
+  
+  .page-content {
+    padding: 0 0.25rem;
+    gap: 1rem;
+  }
+  
+  .cricket-card {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+  }
+  
+  .main-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .page-content {
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+  }
+  
+  .cricket-card {
+    padding: 1rem;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .cricket-card {
+    margin: 0.75rem 0;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .main-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+  
+  .cricket-card {
+    padding: 0.5rem;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  .cricket-card {
+    transition: transform 0.2s ease;
+  }
+  
+  .cricket-card:active {
+    transform: scale(0.98);
+  }
+  
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Better text rendering on mobile */
+@media (max-width: 768px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Modal overlay styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+/* Disable all interactions when modal is open */
+body.modal-open {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+body.modal-open [data-modal="player-profile"] {
+  pointer-events: auto;
+}
+
+.dark .text-visible {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-visible-muted {
+  color: #374151 !important;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark .text-visible-muted {
+  color: #e5e7eb !important;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional text contrast improvements */
+.cricket-card h1,
+.cricket-card h2,
+.cricket-card h3,
+.cricket-card h4,
+.cricket-card h5,
+.cricket-card h6 {
+  color: #1f2937 !important;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark .cricket-card h1,
+.dark .cricket-card h2,
+.dark .cricket-card h3,
+.dark .cricket-card h4,
+.dark .cricket-card h5,
+.dark .cricket-card h6 {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cricket-card p {
+  color: #374151 !important;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark .cricket-card p {
+  color: #e5e7eb !important;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar text improvements */
+.glass-effect a {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.dark .glass-effect a {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.glass-effect a:hover {
+  color: #60a5fa !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.dark .glass-effect a:hover {
+  color: #93c5fd !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Additional visibility enhancements */
+.main-title {
+  color: #ffffff !important;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
+}
+
+.dark .main-title {
+  color: #ffffff !important;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.dark .subtitle {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Perfect centering for all content */
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Consistent page spacing */
+.page-container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    padding: 2rem 2rem;
+  }
+}
+
+.page-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+}
+
+.records-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* Enhanced card visibility */
+.cricket-card {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.dark .cricket-card {
+  background: rgba(15, 23, 42, 0.98) !important;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive improvements */
+@media (max-width: 640px) {
+  .cricket-card {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(5px);
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+}
