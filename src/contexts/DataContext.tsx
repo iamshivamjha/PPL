@@ -62,7 +62,7 @@ const DataContext = createContext<DataContextType | undefined>(undefined)
 
 // Default data
 const defaultPlayers: Player[] = [
-	{ name: "Bholu", matches: 106, runs: 2787, wickets: 3, battingAverage: 26.3, bowlingAverage: 0, winPercentage: 78.1, matchesAsCaptain: 85 },
+	{ name: "Bholu", matches: 106, runs: 2787, wickets: 3, battingAverage: 26.3, bowlingAverage: 0, winPercentage: 77.4, matchesAsCaptain: 155 },
 	{ name: "Mantu", matches: 100, runs: 1235, wickets: 0, battingAverage: 12.4, bowlingAverage: 0, winPercentage: 75.0, matchesAsCaptain: 60 },
 	{ name: "Pintu", matches: 99, runs: 377, wickets: 46, battingAverage: 3.8, bowlingAverage: 21.5, winPercentage: 0, matchesAsCaptain: 0 },
 	{ name: "Golu", matches: 98, runs: 1605, wickets: 59, battingAverage: 16.4, bowlingAverage: 16.6, winPercentage: 57.7, matchesAsCaptain: 24 },
@@ -142,7 +142,7 @@ const defaultHallOfFameMembers: HallOfFameMember[] = [
 ]
 
 const defaultCaptainRecords: CaptainRecord[] = [
-	{ captain: 'Bholu', m: 155, w: 121, l: 41, winPercent: 78.1 },
+	{ captain: 'Bholu', m: 155, w: 120, l: 35, winPercent: 77.4 },
 	{ captain: 'Sandip', m: 75, w: 51, l: 24, winPercent: 68 },
 	{ captain: 'Joni', m: 33, w: 24, l: 9, winPercent: 72.7 },
 	{ captain: 'Himnsu', m: 30, w: 19, l: 11, winPercent: 63.3 },
